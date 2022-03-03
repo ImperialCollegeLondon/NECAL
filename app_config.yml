@@ -1,0 +1,17 @@
+timeseries: # settings for timeseries outputs e.g. line graphs
+  start_year: 2015 # year of first data point in time series outputs
+  step_size: 5 # interval between data points
+2100_mode: # settings for calculator in 2100 mode
+  min_year: 2015 # lowest possible input value
+  max_year: 2100 # highest possible input value
+  step_size: 5 # interval between input values
+maps: # settings for map outputs
+  start_draw_lat: 11.700 # starting latitude for drawing overlays
+  start_draw_lon: 6.500 # starting longitude for drawing overlays
+  padding: 0.20  # vertical padding between overlays in degrees
+  map_center_lat: 9.0820 # latitude on which map is centered
+  map_center_lon: 8.6753 # longitude on which map is centered
+  map_zoom: 5 # map zoom level - see https://docs.mapbox.com/help/glossary/zoom-level/
+  data_year: 2050 # the year at which to plot land usage
+sankey: # settings for sankey plots
+  data_year: 2050 # the year at which to plot data
