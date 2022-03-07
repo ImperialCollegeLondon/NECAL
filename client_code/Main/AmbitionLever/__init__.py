@@ -28,12 +28,12 @@ class AmbitionLever(AmbitionLeverTemplate):
         end_year=2050,
         tooltips=[""] * 5,
         bold=False,
-        click_event_handler=None,
+        click_event_handler=None
     ):
         """Set lever properties"""
 
-        if not click_event_handler:
-            click_event_handler = self.show_info
+        # if not click_event_handler:
+        #     click_event_handler = self.show_info
 
         self.value = value
         self.start_year = start_year
@@ -45,7 +45,11 @@ class AmbitionLever(AmbitionLeverTemplate):
         for i, (level, tip) in enumerate(zip(self.lever.levels, tooltips[1:]), 1):
             level.tooltip = f"Ambition Level {i}:\n" + tip
         self.set_event_handler("x-refresh", event_handler)
-        self.label.set_event_handler("click", click_event_handler)
+        if click_event_handler:
+            self.label.set_event_handler("click", click_event_handler)
+        else:
+            group_name = self.parent.parent.group_lever.label.text.replace(" ", "_")
+            self.label.url = f"/_/theme/one_pagers/{group_name}/{name.replace(' ', '_')}.pdf"
 
     def show_years(self):
         self.panel.add_component(self.years)
