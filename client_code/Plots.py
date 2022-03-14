@@ -35,6 +35,9 @@ def format_plot(plot, title):
     layout.margin = dict(t=30, b=20, l=60, r=0)
     layout.hovermode = "closest"
     layout.title = dict(text=f"{title}", x=0.5)
+    # fudge to fix axes of a single plot
+    if title == "Emissions - Buildings":
+        layout.yaxis.range = (0, 200)
 
 
 def plot_stacked_area(plot, model_solution, output, title, axis_unit):
