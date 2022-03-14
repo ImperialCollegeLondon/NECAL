@@ -15,3 +15,13 @@ maps: # settings for map outputs
   data_year: 2050 # the year at which to plot land usage
 sankey: # settings for sankey plots
   data_year: 2050 # the year at which to plot data
+hidden_levers:
+  Buildings:
+    - "Buildings Insulation"
+    - "District Heat Share"
+    - "Heat Pump Share"
+    - "Hybrid Heat Share"
+    - "Network - Heat Pump"
+    - "Heat Network - Biomass"
+  Electricity:
+    - "Wave & Tidal"

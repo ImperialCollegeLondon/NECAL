@@ -136,6 +136,9 @@ class Main(MainTemplate):
                         input_values["end_years"].pop(0)
                         for _ in range(len(levers["names"]))
                     ],
+                    "hidden_levers": init_vals["hidden_levers"][name]
+                    if name in init_vals["hidden_levers"]
+                    else (),
                 }
                 for name, levers in init_vals["lever_groups"].items()
             ]

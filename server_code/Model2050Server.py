@@ -223,4 +223,5 @@ def initial_values():
         expert_mode=CONFIG["2100_mode"],
         maps_data_year=CONFIG["maps"]["data_year"],
         sankey_data_year=CONFIG["sankey"]["data_year"],
+        hidden_levers=CONFIG["hidden_levers"],
     )

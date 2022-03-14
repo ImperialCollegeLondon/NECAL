@@ -23,6 +23,7 @@ class LeverGroup(LeverGroupTemplate):
                 event_handler=self.lever_clicked,
                 start_year=start_year,
                 end_year=end_year,
+                hidden=name in self.item["hidden_levers"],
             )
             for name, tooltips, value, start_year, end_year in zip(
                 levers["names"], levers["tooltips"], inputs, start_years, end_years
@@ -69,7 +70,8 @@ class LeverGroup(LeverGroupTemplate):
 
         value = self.group_lever.value
         for lever in self.lever_panel.get_components():
-            lever.value = value
+            if lever.visible:
+                lever.value = value
         # now update model based on new values
         main = get_open_form()
         main.update_graphs()

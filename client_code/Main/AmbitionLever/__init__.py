@@ -28,7 +28,8 @@ class AmbitionLever(AmbitionLeverTemplate):
         end_year=2050,
         tooltips=[""] * 5,
         bold=False,
-        click_event_handler=None
+        click_event_handler=None,
+        hidden=False,
     ):
         """Set lever properties"""
 
@@ -50,6 +51,8 @@ class AmbitionLever(AmbitionLeverTemplate):
         else:
             group_name = self.parent.parent.group_lever.label.text.replace(" ", "_")
             self.label.url = f"/_/theme/one_pagers/{group_name}/{name.replace(' ', '_')}.pdf"
+        if hidden:
+            self.visible = False
 
     def show_years(self):
         self.panel.add_component(self.years)
