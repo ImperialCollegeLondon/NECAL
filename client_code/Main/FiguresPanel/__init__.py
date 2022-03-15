@@ -73,6 +73,7 @@ class FiguresPanel(FiguresPanelTemplate):
             tooltip = data[1][1]
 
             label = Label()
+            label.foreground = "theme:White"
             if active:
                 label.icon = "fa:check-square"
             else:
