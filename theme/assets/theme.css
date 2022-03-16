@@ -531,7 +531,7 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
 
 /* Component: Button */
 
-.btn, .btn-default, .file-loader>label {
+.btn, .btn-default, .file-loader>label, .anvil-role-download-button>.link-text {
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;
@@ -550,14 +550,14 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
   position: relative;
 }
 
-.btn:hover, .btn:focus, .file-loader>label:hover {
+.btn:hover, .btn:focus, .file-loader>label:hover, .anvil-role-download-button>.link-text:hover {
   background-color: rgba(153,153,153,0.2);
   background-image: none;
   outline: none;
   color: %color:Primary 500%;
 }
 
-.btn:active, .btn:active:focus {
+.btn:active, .btn:active:focus, .anvil-role-download-button>.link-text:focus {
   background-color: rgba(153,153,153,0.4);
   background-image: none;
   outline: none;
