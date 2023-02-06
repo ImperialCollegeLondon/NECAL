@@ -92,7 +92,7 @@ components:
       event_bindings: {click: expert_toggle_click}
     - type: Link
       properties: {role: 'download-button', url: 'https://testcalculatortemplate.blob.core.windows.net/necal2050/NECAL2050_MacKay_Carbon_Calculator_Draft_v01_08_03_2022.xlsm',
-        align: center, tooltip: '', border: '', foreground: 'theme:Black', visible: true, text: Download Necal2050 Model,
+        align: center, tooltip: '', border: '', foreground: 'theme:Black', visible: false, text: Download Necal2050 Model,
         font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: none,
         icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
         bold: false, underline: false, icon: ''}
