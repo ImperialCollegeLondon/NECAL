@@ -64,7 +64,7 @@ def calculate(inputs, start_year, end_year, expert_mode=False):
     solution = model().calculate(inputs, start_year, end_year)
     config = CONFIG["timeseries"]
     solution["x"] = list(
-        range(config["start_year"], 2105 if expert_mode else 2055, config["step_size"])
+        range(config["start_year"], 2105 if expert_mode else 2065, config["step_size"])
     )
     return solution
 
