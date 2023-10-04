@@ -36,7 +36,7 @@ class Main(MainTemplate):
             self.set_expert_mode(True)
         self.update_graphs()
 
-        self.title.text = translate("NECAL2050")
+        self.title.text = translate("NECAL2060")
 
     def select_figures(self):
         """Initialise the FiguresPanel and add it to the plot area of the app."""
@@ -186,7 +186,7 @@ class Main(MainTemplate):
             expert_mode (bool): True when converting the app into Expert Mode.
         """
         if expert_mode:
-            self.expert_toggle.text = "Go back to 2050 Mode"
+            self.expert_toggle.text = "Go back to 2060 Mode"
             self.refresh_headers(self.label_xs_2100)
             self.settings_title_card.add_component(
                 self.expert_label, x=self.label_xs_2100[2], y=0

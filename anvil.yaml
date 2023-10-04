@@ -7,7 +7,7 @@ package_name: Template2050Calculator
 allow_embedding: false
 name: Template2050Calculator
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
-metadata: {logo_img: 'asset:ecnlogo.png', title: Nigeria Carbon Calculator 2050}
+metadata: {logo_img: 'asset:ecnlogo.png', title: Nigeria Carbon Calculator 2060}
 startup_form: Main
 native_deps: {head_html: ''}
 db_schema: {}
